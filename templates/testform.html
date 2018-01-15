@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Profile</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    Enter Data
+                </td>
+                <td>
+                    Outer Data
+                </td>
+                <td>
+                    Cost
+                </td>
+            </tr>
+            {% for item in user %}
+                <tr>
+                    <td>
+                        {{ item.enter_Date }}
+                    </td>
+                    <td>
+                        {{ item.out_Date }}
+                    </td>
+                    <td>
+                        {{ item.cost }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

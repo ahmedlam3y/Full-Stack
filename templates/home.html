@@ -1,0 +1,395 @@
+{% load static %}
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Smart Garage </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
+
+	<!--Google Font link-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="{% static 'assetshome/css/slick.css' %}">
+	<link rel="stylesheet" href="{% static 'assetshome/css/slick-theme.css' %}">
+	<link rel="stylesheet" href="{% static 'assetshome/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'assetshome/css/fonticons.css' %}">
+	<link rel="stylesheet" href="{% static 'assetshome/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assetshome/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'assetshome/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'assetshome/css/bootsnav.css' %}">
+
+	<link rel="stylesheet" href="{% static 'cssregister/style.css' %}">
+
+
+
+
+	<!--For Plugins external css-->
+	<!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+
+	<!--Theme custom css -->
+	<link rel="stylesheet" href="{% static 'assetshome/css/style.css' %}">
+	<!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
+
+	<!--Theme Responsive css-->
+	<link rel="stylesheet" href="{% static 'assetshome/css/responsive.css' %}" />
+
+	<script src="{% static 'assetshome/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+
+	<!-- Preloader -->
+	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_one"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_four"></div>
+			</div>
+		</div>
+	</div>
+	<!--End off Preloader -->
+
+
+	<div class="culmn">
+		<!--Home page style-->
+
+
+
+		<nav class="navbar navbar-light navbar-expand-lg  navbar-fixed white no-background bootsnav">
+			<div class="container">
+				<!-- Start Atribute Navigation -->
+				<div class="attr-nav">
+					<ul>
+						<li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+					</ul>
+				</div>
+				<!-- End Atribute Navigation -->
+
+				<!-- Start Header Navigation -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+					<a class="navbar-brand" href="#"><h4>SmartGarage</h4></a>
+				</div>
+				<!-- End Header Navigation -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+						<li><a href="#about">About</a></li>
+						<li><a href="#service">Services</a></li>
+						<li><a href="#map">GarageMap</a></li>
+						<li><a href="register">Registration</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+
+
+			<!-- Start Side Menu -->
+			<div class="side">
+				<a href="#" class="close-side"><i class="fa fa-times"></i></a>
+				<div class="widget">
+					<h6 class="title">Custom Pages</h6>
+					<ul class="link">
+						<li><a href="#about">About</a></li>
+						<li><a href="#service">Services</a></li>
+						<li><a href="#map">GarageMap</a></li>
+						<li><a href="register">Registation</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="widget">
+					<h6 class="title">Additional Information</h6>
+					<ul class="link">
+						<li><a href="#">Review</a></li>
+						<li><a href="#">Any Quetion</a></li>
+						<li><a href="#">Use Once</a></li>
+						<li><a href="#">FaceBook</a></li>
+						<li><a href="#">What is New?</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End Side Menu -->
+
+		</nav>
+		{% block body_block %}
+		<!--Home Sections-->
+
+		<section id="hello" class="home bg-mega">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="main_home">
+						<div class="home_text">
+                            <h1 class="text-white"> Welcome To Our Automatic Garage</h1>
+                            <h4 class="text-white"> Click Enter Car And Than Enter The Screen Number to Enter The Car and OuterNumber </h4>
+						</div>
+
+						 <div class="home_btns m-top-40">
+							<a href="entercar" target="_blank" class="btn btn-primary m-top-20">Enter Car</a>
+							<a href="outcar" target="_blank" class="btn btn-default m-top-5">Out Car </a>
+						</div>
+
+					</div>
+				</div>
+				<!--End off row-->
+			</div>
+			<!--End off container -->
+		</section>
+		<!--End off Home Sections-->
+
+
+		<!--About Sections-->
+		<section id="about" class="about roomy-100">
+			<div class="container">
+				<div class="row">
+					<div class="main_about">
+						<div class="col-md-6">
+							<div class="about_content">
+								<h2>ABOUT US</h2>
+								<div class="separator_left"></div>
+
+                                <h5>We are AIET students and we built webside for our graduation project to let our Garage System more SMART</h5>
+
+								<div class="about_btns m-top-40">
+									<a href="register.html" class="btn btn-primary">Registing</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+                </div>
+				<!--End off row-->
+			</div>
+			<!--End off container -->
+		</section>
+		<!--End off About section -->
+
+
+		<!--Video section-->
+		<section id="video" class="video">
+			<h6 class="text-white" >Not forget to make video response</h6>
+			<div class="overlay"></div>
+			<div class="main_video roomy-100 m-top-100 m-bottom-100 text-center">
+				<div class="video_text text-center">
+					<!--<a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-link"><span class="fa fa-play"></span></a>-->
+				<video width="900" height="460" controls="">
+						<source src="{% static 'video.mp4' %}" type="video/mp4" />
+				</video>
+
+
+				</div>
+			</div>
+		</section>
+		<h6>Area To Add Some Image</h6>
+
+		<div class="featured_slider">
+			<div>
+				<div class="featured_img">
+					<img src="{% static 'assetshome/images/fprojects/1.jpg' %}" alt="" />
+					<a href="{% static 'assetshome/images/fprojects/1.jpg' %}" class="popup-img"></a>
+				</div>
+			</div>
+			<div>
+				<div class="featured_img">
+					<img src="{% static 'assetshome/images/fprojects/2.jpg' %}" alt="" />
+					<a href="{% static 'assetshome/images/fprojects/2.jpg' %}" class="popup-img"></a>
+				</div>
+			</div>
+			<div>
+				<div class="featured_img">
+					<img src="{% static 'assetshome/images/fprojects/3.jpg' %}" alt="" />
+					<a href="{% static 'assetshome/images/fprojects/3.jpg' %}" class="popup-img"></a>
+				</div>
+			</div>
+			<div>
+				<div class="featured_img">
+					<img src="{% static 'assetshome/images/fprojects/4.jpg' %}" alt="" />
+					<a href="{% static 'assetshome/images/fprojects/4.jpg' %}" class="popup-img"></a>
+				</div>
+			</div>
+			<div>
+				<div class="featured_img">
+					<img src="{% static 'assetshome/images/fprojects/5.jpg' %}" alt="" />
+					<a href="{% static 'assetshome/images/fprojects/5.jpg' %}" class="popup-img"></a>
+				</div>
+			</div>
+		</div>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+		<!-- End off featured slider -->
+
+
+
+		<!--Service Section-->
+		<section id="service" class="service">
+			<div class="container">
+				<div class="row">
+					<div class="main_service roomy-100">
+						<div class="col-md-8 col-sm-10 mr-md-auto ml-md-auto mr-sm-auto ml-sm-auto">
+							<div class="head_title text-center">
+								<h2>OUR SERVICES</h2>
+								<div class="separator_auto"></div>
+									<ul>
+										<li>normaly you can usage Once: </li>
+										<li>Frequent User: </li>
+									</ul>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+				<!--End off row -->
+			</div>
+			<!--End off container -->
+		</section>
+		<!--End off Featured section-->
+
+		<!--Maps Section-->
+		<div id="map" class="main_maps text-center fix">
+			<div class="overlay"></div>
+			<div class="maps_text">
+				<h3 class="text-white" onclick="showmap()">FIND US ON THE MAP <i class="fa fa-angle-down"></i></h3>
+				<div id="map_canvas" class="mapheight"></div>
+			</div>
+		</div>
+		<!-- End off Maps Section-->
+
+        </br></br></br></br>
+
+		<!--Contact Us Section-->
+		<section id="contact" class="contact bg-mega fix">
+			<div class="container">
+				<div class="row">
+					<div class="main_contact roomy-100 text-white">
+						<div class="col-md-4">
+							<div class="rage_widget">
+								<div class="widget_head">
+									<h3 class="text-white">Contact Us</h3>
+									<div class="separator_small"></div>
+								</div>
+								<p>For any Feedback or Review </p>
+
+								<div class="widget_socail m-top-30">
+									<ul class="list-inline-item">
+										<li><a href=""><i class="fa fa-facebook"></i></a></li>
+										<li><a href=""><i class="fa fa-twitter"></i></a></li>
+										<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+										<li><a href=""><i class="fa fa-vimeo"></i></a></li>
+										<li><a href=""><i class="fa fa-instagram"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8 sm-m-top-30">
+							<form class="" action="subcribe.php">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<input id="first_name" name="first_name" type="text" placeholder="Name" class="form-control" required="">
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="form-group">
+											<input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+										</div>
+									</div>
+
+									<div class="col-sm-12">
+										<div class="form-group">
+											<textarea class="form-control" rows="6" placeholder="Message"></textarea>
+										</div>
+										<div class="form-group text-center">
+											<a href="" class="btn btn-primary">SEND MESSAGE</a>
+										</div>
+									</div>
+
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--End off row -->
+			</div>
+			<!--End off container -->
+		</section>
+		<!--End off Contact Section-->
+
+
+		<!-- scroll up-->
+		<div class="scrollup">
+			<a href="#"><i class="fa fa-chevron-up"></i></a>
+		</div>
+		<!-- End off scroll up -->
+
+
+	</div>
+		{% endblock %}
+
+	<!-- JS includes -->
+
+	<script src="{% static 'assetshome/js/vendor/jquery-1.11.2.min.js' %}"></script>
+	<script src="{% static 'assetshome/js/vendor/popper.min.js' %}"></script>
+	<script src="{% static 'assetshome/js/vendor/bootstrap.min.js' %}"></script>
+
+	<script src="{% static 'assetshome/js/jquery.magnific-popup.js' %}"></script>
+	<script src="{% static 'assetshome/js/jquery.easing.1.3.js' %}"></script>
+	<script src="{% static 'assetshome/js/slick.min.js' %}"></script>
+	<script src="{% static 'assetshome/js/jquery.collapse.js' %}"></script>
+	<script src="{% static 'assetshome/js/bootsnav.js' %}"></script>
+
+
+	<!-- paradise slider js -->
+
+
+	<script src="http://maps.google.com/maps/api/js?key=AIzaSyD_tAQD36pKp9v4at5AnpGbvBUsLCOSJx8"></script>
+	<script src="{% static 'assetshome/js/gmaps.min.js' %}"></script>
+
+	<script>
+		function showmap() {
+			var mapOptions = {
+				zoom: 15,
+				scrollwheel: false,
+				center: new google.maps.LatLng(31.220084, 29.950195),
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var marker = new google.maps.Marker({
+          position:new google.maps.LatLng(31.220084, 29.950195),
+          title: 'Here is Our Garage'
+        });
+			var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+			marker.setMap(map);
+			$('.mapheight').css('height', '350');
+			$('.maps_text h3').hide();
+		}
+
+	</script>
+
+
+
+
+
+	<script src="{% static 'assetshome/js/plugins.js' %}"></script>
+	<script src="{% static 'assetshome/js/main.js' %}"></script>
+
+
+</body>
+
+</html>
